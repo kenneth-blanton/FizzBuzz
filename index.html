@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/43b5bc5acb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="header">
+            <i class="fa-solid fa-bolt">FizzBuzz</i>
+            <span>  <a href="https://codebykenneth.dev/">Home</a>
+                    <a href="#">Code</a>
+                    <a href="https://github.com/kenneth-blanton">GitRepo</a></span>
+        </div>
+
+        <main>
+            <div class="sidebar">
+                <h1>FizzBuzz: A Coding Project</h1>
+                <h4>Welcome to FizzBuzz! A Javascript app using loops, conditional statements, and template literals. Use the program that prints the numbers from 1 to a maximum number of your choice 
+                    and multiples of two numbers of your choice. The first number prints "Fizz" and the second prints "Buzz". When the number is a multiple of both "FizzBuzz" is printed.</h4>
+                <br>
+                <h2>Instructions</h2>
+                <h4>Enter a fizz and a buzz value. Press the button and the values will appear.</h4>
+            </div>
+
+            <div class="content">
+                <form>
+                    <span><label for="num1">Enter Fizz Number: <input type="number" name="num1" id="num1"></label></span>
+                    <span><label for="num1">Enter Buzz Number: <input type="number" name="num2" id="num2"></label></span>
+                    <span><label for="num1">Enter Max Number: <input type="number" name="max" id="max"></label></span>
+                    <br>
+                    <button type="submit" onclick="fizzbuzz()">Fizz It!</button>
+                </form>
+
+                <div class="table">
+                    <h3>Results</h3>
+                    <table>
+                        <tbody id="table-data"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <script src="index.js" defer></script>
+    </body>
+</html>

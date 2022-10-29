@@ -1,0 +1,151 @@
+/*  BODY */
+
+body {
+    display: block;
+    margin: 0;
+    background-color: lightsteelblue;
+}
+
+.header {
+    align-items: center;
+    font-weight: bold;
+    background-color: bisque;
+    display: flex;
+    border-bottom: 1px solid rgb(25, 25,95);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header span {
+        display: block;
+    }
+
+    .header span a:hover, .header span a:focus {
+        padding: 1em !important;
+        border: 1px solid rgb(25, 25,95);
+        background-color: lightsteelblue;
+    }
+
+    i {
+        margin: 10px 0px !important;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        border-right: none !important;
+        width: auto !important;
+    }
+
+    .content {
+        width: auto !important;
+    }
+
+    form span{
+        display: block !important;
+    }
+}
+
+.header span {
+    margin-left: 1em;
+    padding: 16px;
+}
+
+.header span a {
+    padding: 16px;
+    text-decoration: none;
+    color: rgb(25, 25,95);
+}
+
+.header span a:hover, .header span a:focus {
+    padding: 2.1em;
+    border: 1px solid rgb(25, 25,95);
+    background-color: lightsteelblue;
+}
+
+i {
+    margin: 20px 10px;
+    color: lightsteelblue;
+    font-size: 46px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-flex;
+    padding: 16px;
+}
+
+li a {
+    color: rgb(25, 25,95);
+    text-decoration: none;
+}
+
+li:hover, li:focus {
+    background: lightsteelblue;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    color: rgb(25, 25,95);
+    text-align: center;
+    padding: 15px;
+    width: 25%;
+    border-bottom: 1px solid rgb(25, 25,95);
+    border-right: 1px solid rgb(25, 25,95);
+}
+
+.content {
+    font-weight: bold;
+    color: rgb(25, 25,95);
+    width: 75%;
+    border-bottom: 1px solid rgb(25, 25,95);
+}
+
+form {
+    display: block;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+label {
+    margin: 0px 30px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: bisque;
+}
